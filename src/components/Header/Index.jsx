@@ -1,6 +1,8 @@
+import styles from './Header.module.css'
+
 const Header = ({page}) => {
     return (
-        <h1>{page}</h1>   
+        <h1 className={styles.header}>{page}</h1>   
     )
 }
 

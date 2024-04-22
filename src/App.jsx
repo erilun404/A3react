@@ -5,6 +5,7 @@ import Merva from './components/Merva/index'
 import Footer from './components/Footer/Index'
 import Home from './components/Home'
 import Navigation from './components/Navigation/Index'
+import './App.css'
 
 function App() {
     const [currentPage, setCurrentPage] = useState(null)
