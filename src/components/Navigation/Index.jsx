@@ -2,15 +2,18 @@ import NavItem from "./NavItem/Index"
 import styles from './Navigation.module.css'
 
 const Navigation = ({ navigationUpdateFunction }) => {
+    const mapNavItem = ["home", "merva", "menja"]
     return (
         <>
-        <div className={styles.navigation}> {/*can i use map here*/ }
-            <NavItem title="home" setCharacter={navigationUpdateFunction} />
-            <NavItem title="merva" setCharacter={navigationUpdateFunction} />
-            <NavItem title="menja" setCharacter={navigationUpdateFunction}/> 
+        <div className={styles.navigation}>
+            {mapNavItem.map(item => 
+                <NavItem 
+                key={item} 
+                title={item} 
+                setCharacter={navigationUpdateFunction} />
+            )}
         </div>
         </>
-     
     )
 }
 
