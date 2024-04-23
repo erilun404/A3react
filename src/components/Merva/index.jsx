@@ -2,8 +2,6 @@ import { Characters as Character } from "../../Data"
 import image from '../../assets/Merva.jpg'
 import '../../App.css'
 const Merva = () => {
-    
-    console.log(Character[0])
     return (
         <div className="character">
             <img className="image" src={image} alt="Merva" height="200px"/>
@@ -14,5 +12,4 @@ const Merva = () => {
         </div>
     )
 }
-
 export default Merva

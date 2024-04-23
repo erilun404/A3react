@@ -1,4 +1,3 @@
-
 const NavItem = ({title, setCharacter}) => {
     const handleClick = () => {
         (title === "home" ? setCharacter(null) : setCharacter(title))
@@ -8,5 +7,4 @@ const NavItem = ({title, setCharacter}) => {
         <div onClick={handleClick}> {title}</div>
     )
 }
-
 export default NavItem

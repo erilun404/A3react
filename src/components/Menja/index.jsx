@@ -1,6 +1,7 @@
 import { Characters as Character } from "../../Data";
 import image from '../../assets/Menja.jpg'
 import '../../App.css'
+
 const Menja = () => {
     return (
         <div className="character">
@@ -12,5 +13,4 @@ const Menja = () => {
         </div>
     )
 }
-
 export default Menja;

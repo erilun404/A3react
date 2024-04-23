@@ -16,5 +16,4 @@ const Navigation = ({ navigationUpdateFunction }) => {
         </>
     )
 }
-
 export default Navigation

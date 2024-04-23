@@ -10,7 +10,7 @@ import './App.css'
 function App() {
     const [currentPage, setCurrentPage] = useState(null)
     const [currentGame, setCurrentGame] = useState(null)
-    
+   
     useEffect(() => {
       if (currentPage === "merva") {
         setCurrentGame("DnD")
@@ -20,10 +20,12 @@ function App() {
         setCurrentGame("Welcome to my website")
       }
     },[currentPage])
+
+  
     
   return (
     <>
-      <Header page={currentGame}/>
+      <Header game={currentGame} page={currentPage}/>
       <Navigation navigationUpdateFunction={setCurrentPage} />
       
       {!currentPage && <Home />}
